@@ -1,0 +1,23 @@
+{
+  "name": "xls-extract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "exceljs": "^4.3.0"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+	},
+	"bin": "index.js",
+	"pkg": {
+		"targets": [
+			"node18"
+		]
+  }
+}

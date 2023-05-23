@@ -1,5 +1,5 @@
 const ExcelJS = require('exceljs')
-const fs = require('node:fs/promises')
+const fs = require('fs/promises')
 
 const INPUT_ANCHOR = '专家姓名'
 
@@ -39,7 +39,7 @@ const OUTPUT_LAYOUT = {
 
 function plaintext(str) {
   if (!str) return ''
-  return str.replaceAll(/[\s\\n\\r\\t]/g, '')
+  return String(str).replace(/[\s\\n\\r\\t]/g, '')
 }
 
 // 根据身份证号得到证件类型
